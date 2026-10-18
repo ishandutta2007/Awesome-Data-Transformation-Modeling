@@ -28,73 +28,29 @@ Contributions welcome! Open a PR to add/update entries. Keep descriptions factua
 
 
 
-## Table of Contents
-
+- [Sector Overview & Market Dynamics](#sector-overview--market-dynamics)
 - [SaaS/Hosted Platforms](#saas-hosted-platforms)
-
 - [Open-Source GitHub Projects](#open-source-github-projects)
-
 - [How to Contribute](#how-to-contribute)
-
 - [Disclaimer](#disclaimer)
 
+## Sector Overview & Market Dynamics
 
+The global data integration and data transformation software market is valued at approximately **$14B–$20B in 2026** and is projected to expand toward **$35B–$47B+ by the mid-2030s** at an estimated **11%–14% CAGR**, propelled by real-time analytics and enterprise AI/LLM readiness pipelines. The sector is **moderately fragmented yet anchored by a concentrated core**: hyperscalers (AWS, Microsoft, Google) and legacy data management titans (Informatica, Talend/Qlik) dominate high-governance enterprise workloads, while agile cloud-native pure-plays (Databricks, Fivetran, Coalesce, Matillion) fiercely contest modern lakehouse and warehouse-centric modeling.
 
 ## SaaS/Hosted Platforms
 
-
-
-- **Coalesce**  
-
-  **Governed data transformation, catalog, and quality platform built for Snowflake** . **Visual, column-aware interface** generates production-grade SQL—positioned between dbt's code-first approach and Matillion's fully visual paradigm . **Column-level lineage and governance** built in, with reusable templates that enforce consistent patterns across teams . **Pricing**: **Free tier available** (development always free); **Starter at $500/month** includes 2,000 credits; Enterprise and Business Critical are custom . **Best for**: teams committed to Snowflake who want **dbt-like control with more visual tooling** and built-in governance .
-
-
-
-- **Matillion**  
-
-  **Visual, drag-and-drop cloud-native ETL/ELT suite** covering both ingestion and transformation . **Credit-based consumption model** across Developer, Teams, and Scale editions—**task hours meter at 3 credits/hour for transformation and 1 for orchestration** . **No published dollar-per-credit figure**; public numeric starting price is not shown . **Legacy Matillion ETL reaches end-of-support** (1.78 LTS supported until November 2026) . **Best for**: teams wanting **one commercial vendor for ingestion and transformation with a GUI-first experience**—but expect **migration pressure** as legacy ETL sunsets and **version control/code review are less natural** than code-first tools .
-
-
-
-- **Fivetran Transform**  
-
-  **Transformation layer within the Fivetran platform** . **Note**: Fivetran's pricing is **Monthly Active Rows (MAR)** for replication, with **5,000 monthly model runs** included on the free plan for transformations . **Best for**: teams already using Fivetran for ingestion who want **transformations managed in the same platform**.
-
-
-
-- **Databricks Lakehouse**  
-
-  **Lakehouse platform with built-in transformation capabilities** via **Delta Live Tables** and **Spark SQL** . **Unity Catalog** governs data and models across the lakehouse . **Best for**: teams already running Spark workloads on Databricks who want **transformations co-located with their data and ML pipelines**.
-
-
-
-- **AWS Glue**  
-
-  **Serverless ETL service with DataBrew for visual preparation** . **Pricing**: **$0.44 per DPU-hour** for Glue jobs; **DataBrew at $0.48 per 30-minute interactive session** and **$0.46 per node-hour** for cleaning jobs . **Best for**: AWS-native teams needing **serverless Spark ETL** without managing infrastructure.
-
-
-
-- **Talend Data Fabric**  
-
-  **Enterprise data integration and transformation platform** . **Note**: **Qlik Talend Cloud** is the current offering for teams needing **data catalogue and stewardship workflows from the same vendor as the pipelines** . **Best for**: large enterprises with **complex legacy integration** and **governance requirements** .
-
-
-
-- **Informatica Cloud**  
-
-  **Enterprise data integration and management platform** with **IPU (Informatica Processing Unit)** consumption model . **Premium connectors** (SAP, Salesforce, mainframe) add **$25,000–$100,000 annually** . **PowerCenter five-year TCO** reportedly ranges **$3.6M to $15M+** for mid-to-large deployments . **Best for**: large enterprises with **complex legacy integration** and **deep regulatory compliance** needs.
-
-
-
-- **Keboola**  
-
-  **Unified data platform with ETL/ELT, SQL/Python transformations, and built-in Snowflake storage** . **Pricing**: **Free plan** with **120 free minutes first month, 60 minutes/month after**, **$0.14 per additional minute** . **Data Craft at €49/user/month** (600 minutes then $0.125/minute); **Data Teams at €79/user/month** with 70 Time Credits . **Enterprise** for multi-cloud, private deployments, and compliance . **MCP Server** exposes the platform as callable tools for AI agents . **SOC 2 Type II, GDPR, and HIPAA** available . **Best for**: teams wanting an **all-in-one platform** with transparent compute-minute pricing and **strong European data residency** options .
-
-
-
-- **Prophecy**  
-
-  **AI-first data transformation platform with visual pipeline editor and SQL editor** . **Pricing**: **Starter free** (20 credits/month, embedded DuckDB) . **Professional at $150/user/month** (50 credits/user, processing in Databricks/Snowflake/BigQuery) . **Enterprise Express at $4,000** (up to 20 users, billed annually, dedicated SaaS environment, SSO, SCIM, private LLM) . **Enterprise custom** for 20+ users . **Transpiler** imports Alteryx and Informatica workflows (5 imports/month on Starter; 100 on Enterprise Express) . **ISO 27001, SOC 2 Type 2, SOC 1 Type 2, GDPR, CCPA compliant** . **Best for**: teams wanting **AI-assisted pipeline generation** (Transform Agent, Document Agent) with visual review and **legacy Alteryx/Informatica migration** support .
+| Platform | Estimated Scale / Valuation | Starting Pricing | Free Tier / Trial Limits | Key Capabilities & Best For |
+|---|---|---|---|---|
+| **AWS Glue** | **~$2.0T+** (Amazon market cap; AWS ARR >$105B) | **$0.44 per DPU-hour** (Glue ETL jobs, 1-min minimum); DataBrew: **$0.48 / 30-min session** & **$0.46 / node-hour** | **Forever free**: First **1,000,000 objects stored** and **1,000,000 requests/month** in AWS Glue Data Catalog (compute ETL jobs billed per-second) | Serverless Spark ETL, visual data preparation (DataBrew), and metadata management for AWS-native cloud architectures. |
+| **Databricks Lakehouse** | **$134B** (valuation, Series L) | **$0.15 / DBU** (Data Engineering jobs / pipelines) to **$0.22 / DBU** (SQL Warehouses); serverless pay-as-you-go | **14-day free trial** with up to **$400 in usage credits** (full commercial evaluation); also provides a **Community / Free Edition** restricted to non-commercial learning with 1 2X-Small SQL warehouse and daily fair-usage caps | Unified lakehouse platform leveraging Delta Live Tables, Spark SQL, and Unity Catalog governance for data and ML pipelines. |
+| **Informatica Cloud** | **~$7.5B** (market cap / ~$1.6B ARR) | **~$90–$100 per IPU/month** via pre-purchased capacity tiers (entry enterprise contracts typically start at **$80,000/year**) | **Forever free tier**: **25 IPUs (Informatica Processing Units) per month** on Cloud Data Integration Free Service; or **30-day full feature trial** | Enterprise data integration and governance platform with extensive pre-built enterprise connectors (SAP, mainframe). |
+| **Fivetran Transform** | **$5.6B** (valuation; >$325M ARR) | **~$500 per million MAR** on Standard plan (+ **$5/month floor per connection**) | **Forever free tier**: Up to **500,000 connector MAR/month**, **3,500 activation MAR/month**, and **5,000 monthly model runs** (dbt Core / SQL transforms) | Managed transformation and ELT layer integrated directly into Fivetran's automated pipeline ecosystem. |
+| **Talend Data Fabric** | **~$3.1B** (acquired by Qlik / ~$400M+ revenue) | **~$30,000/year** entry-level quote for Qlik Talend Cloud Standard (volume-metered by GB/TB transferred) | **14-day free trial** with unrestricted pipeline access and a **7-day historical sync grace period** (desktop Open Studio was retired in 2024) | Enterprise data integration, cataloging, and stewardship workflows across hybrid and complex multi-cloud environments. |
+| **Matillion** | **$1.5B** (valuation; ~$80M ARR) | **~$2.00–$3.50 per credit** on consumption plans; pipelines meter at **3 credits/task-hour for transforms** and **1 credit/task-hour for orchestration** | **14-day free trial** with **500 free usage credits** and unrestricted access to all platform components and connectors | Visual, drag-and-drop cloud-native ELT platform pushing SQL transformations down into Snowflake, Databricks, Redshift, and BigQuery. |
+| **Prophecy** | **$268M** (valuation; ~$30M ARR) | **Starter plan at $0**; **Professional at $150/user/month** (includes 50 credits/user/month); **Enterprise Express at $4,000/year** (up to 20 users) | **Forever free Starter plan**: **20 credits/month**, embedded DuckDB execution, and 5 transpiler imports/month | AI-first visual pipeline and SQL canvas (Transform Agent, Document Agent) supporting Spark and legacy Alteryx/Informatica transpilation. |
+| **Keboola** | **$128M** (valuation; ~$10M ARR) | **Data Craft at €49/user/month** (includes 600 minutes/month, then €0.125/minute); **Data Teams at €79/user/month** | **Forever free tier**: **120 free compute minutes** in month 1, and **60 free minutes/month** thereafter (additional usage billed at $0.14/min) | All-in-one data operations platform offering SQL/Python transformations, native Snowflake storage, MCP agent server, and EU data residency. |
+| **Coalesce** | **~$90M–$100M** (est. valuation, $87M raised; ~$20M ARR) | **Starter plan at $500/month** (includes 2,000 credits/month); Enterprise plans custom | **Forever free tier**: Development environments are **always free for individual developers**; **30-day trial** available for team/production features | Column-aware visual data modeling, quality, and cataloging platform generating governed SQL natively for Snowflake. |
 
 
 
