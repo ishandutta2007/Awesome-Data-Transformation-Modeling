@@ -1,44 +1,60 @@
-# Awesome-Data-Transformation-Modeling
+<div align="center">
 
-## Top Data Transformation & Modeling Ecosystem
+<img src="./assets/banner.svg" alt="Awesome Data Transformation &amp; Modeling Banner" width="100%" />
 
+# ⚡ Awesome Data Transformation & Modeling
 
+[![Awesome](https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github)](https://github.com/ishandutta2007/Awesome-Awesome-Awesome)[![Discord](https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/jc4xtF58Ve)
+[![Curated List](https://img.shields.io/badge/Curated-Awesome%20List-0ea5e9?style=flat-square&logo=git)](https://github.com/ishandutta2007/Awesome-Data-Transformation-Modeling)
+[![License: MIT](https://img.shields.io/badge/License-MIT-emerald?style=flat-square)](LICENSE)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](https://github.com/ishandutta2007/Awesome-Data-Transformation-Modeling/pulls)
+[![Followers](https://img.shields.io/github/followers/ishandutta2007?label=Follow)](https://github.com/ishandutta2007)
 
-**Curated List of SaaS Products & Open-Source GitHub Projects**  
+**A carefully curated index of industry-standard SaaS platforms and powerful open-source projects for Data Transformation, SQL-First Modeling, Visual Canvas ELT, Schema Evolution, and In-Warehouse Pipelines.**
 
-*Focused on SQL-First Modeling, Visual Pipelines & Schema Evolution*  
+*Last updated: October 2026*
 
-**Last updated: October 2026**
+</div>
 
+---
 
+## 🧭 Overview & Modern Analytics Engineering
 
-This repository tracks notable **SaaS platforms** and **open-source projects** for **Data Transformation & Modeling**. These tools enable analytics engineers and data teams to build, test, and deploy transformation pipelines inside their warehouse—from code-first frameworks that treat SQL models like software to visual canvases that generate governed SQL for analysts.
+Modern analytics teams treat data transformation not as an afterthought, but as pure software engineering. This repository catalogs notable **SaaS platforms** and **open-source frameworks** enabling analytics engineers, data engineers, and data teams to build, test, version control, and orchestrate transformation pipelines directly inside cloud lakehouses and data warehouses.
 
+Whether you are seeking:
+- **Code-First SQL Modeling** (treating models as modular, testable software assets with version control and CI/CD)
+- **High-Performance Compute Engines** (transforming terabyte-scale datasets locally or in distributed lakehouses)
+- **Visual Canvas & AI-Assisted ELT** (empowering analysts to design governed pipelines with column-level lineage)
+- **Data Quality, Formatting & Static Type-Checking** (catching schema drift, formatting SQL, and ensuring runtime guarantees)
 
+You will find vetted tools, starting pricing, free tier limits, star badges, and architectural trade-offs below.
 
-**Examples** include dbt, Coalesce, Matillion, Fivetran Transform, Databricks Lakehouse, AWS Glue, Talend Data Fabric, Informatica Cloud, Keboola, and Prophecy (the category leaders).
+---
 
+## 📑 Table of Contents
 
+- [📊 Sector Overview & Market Dynamics](#-sector-overview--market-dynamics)
+- [🏢 SaaS / Hosted Platforms](#-saas--hosted-platforms)
+- [⭐ Open-Source GitHub Projects](#-open-source-github-projects)
+  - [Top Projects (Ranked by Star Count)](#top-projects-ranked-by-star-count)
+  - [Architectural Patterns & Stack Synthesis](#architectural-patterns--stack-synthesis)
+- [🤝 How to Contribute](#-how-to-contribute)
+- [💖 Support & Community](#-support--community)
+- [📈 Star History](#-star-history)
+- [⚖️ Disclaimer & Engineering Trade-offs](#️-disclaimer--engineering-trade-offs)
 
-**Open-source emphasis**: This section is heavily expanded with every major active project for self-hosting, SQL modeling, and open transformation infrastructure—ideal for analytics engineers, data teams, and organizations seeking transparent, vendor-independent data modeling.
+---
 
-
-
-Contributions welcome! Open a PR to add/update entries. Keep descriptions factual and link to official sites.
-
-
-
-- [Sector Overview & Market Dynamics](#sector-overview--market-dynamics)
-- [SaaS/Hosted Platforms](#saas-hosted-platforms)
-- [Open-Source GitHub Projects](#open-source-github-projects)
-- [How to Contribute](#how-to-contribute)
-- [Disclaimer](#disclaimer)
-
-## Sector Overview & Market Dynamics
+## 📊 Sector Overview & Market Dynamics
 
 The global data integration and data transformation software market is valued at approximately **$14B–$20B in 2026** and is projected to expand toward **$35B–$47B+ by the mid-2030s** at an estimated **11%–14% CAGR**, propelled by real-time analytics and enterprise AI/LLM readiness pipelines. The sector is **moderately fragmented yet anchored by a concentrated core**: hyperscalers (AWS, Microsoft, Google) and legacy data management titans (Informatica, Talend/Qlik) dominate high-governance enterprise workloads, while agile cloud-native pure-plays (Databricks, Fivetran, Coalesce, Matillion) fiercely contest modern lakehouse and warehouse-centric modeling.
 
-## SaaS/Hosted Platforms
+---
+
+## 🏢 SaaS / Hosted Platforms
+
+Below is the comparative breakdown of leading enterprise SaaS and hosted transformation platforms, ordered descending by organizational scale and valuation:
 
 | Platform | Estimated Scale / Valuation | Starting Pricing | Free Tier / Trial Limits | Key Capabilities & Best For |
 |---|---|---|---|---|
@@ -52,108 +68,115 @@ The global data integration and data transformation software market is valued at
 | **Keboola** | **$128M** (valuation; ~$10M ARR) | **Data Craft at €49/user/month** (includes 600 minutes/month, then €0.125/minute); **Data Teams at €79/user/month** | **Forever free tier**: **120 free compute minutes** in month 1, and **60 free minutes/month** thereafter (additional usage billed at $0.14/min) | All-in-one data operations platform offering SQL/Python transformations, native Snowflake storage, MCP agent server, and EU data residency. |
 | **Coalesce** | **~$90M–$100M** (est. valuation, $87M raised; ~$20M ARR) | **Starter plan at $500/month** (includes 2,000 credits/month); Enterprise plans custom | **Forever free tier**: Development environments are **always free for individual developers**; **30-day trial** available for team/production features | Column-aware visual data modeling, quality, and cataloging platform generating governed SQL natively for Snowflake. |
 
+---
 
+## ⭐ Open-Source GitHub Projects
 
-## Open-Source GitHub Projects
+Open-source technologies form the bedrock of the modern data stack. These tools empower teams to maintain complete control over compute costs, avoid vendor lock-in, and deploy automated data pipelines on local development workstations, on-premises clusters, or any cloud environment.
 
+### Top Projects (Ranked by Star Count)
 
+Repos below are sorted in **descending order by GitHub star count**. Each project includes a social star badge linking directly to its stargazer community:
 
-- **dbt (data build tool)**  
+- **Apache Spark** [![Stars](https://img.shields.io/github/stars/apache/spark?style=social&color=white)](https://github.com/apache/spark/stargazers)  
+  **Unified engine for large-scale distributed data transformation and processing** (Apache-2.0) . Supports DataFrame APIs and Spark SQL across Python, Scala, Java, and R . Provides execution engines for batch processing, streaming, machine learning, and petabyte-scale ETL pipelines . **Best for**: massive distributed data processing and hybrid big-data architectures .
 
-  **Enables data analysts to transform data in their warehouse** (Apache-2.0 for Core) — **the analytics engineering standard** . **Models are SQL files** with **Jinja templating** for reusable logic . **Tests, documentation, and version control** are first-class—**teams treat data models like software code** . **Huge package ecosystem** (`dbt-utils` and friends cover most common needs) and **largest talent pool** . **Fusion engine** (Rust-based) is faster than the legacy Python engine . **Honest weaknesses**: **Python support runs through the warehouse's own runtime** (library availability depends on Snowflake/Databricks) ; **column-level lineage is not native to dbt Core** (requires a catalog or paid tier) . **No native ingestion or orchestration**—pairs with Fivetran/Airbyte for extraction and Airflow/Dagster for scheduling . **The reference implementation for SQL-first transformation** .
+- **DuckDB** [![Stars](https://img.shields.io/github/stars/duckdb/duckdb?style=social&color=white)](https://github.com/duckdb/duckdb/stargazers)  
+  **High-performance in-process analytical SQL OLAP database management engine** (MIT) . Often hailed as the "SQLite for Analytics," DuckDB executes zero-copy vector transformations on Parquet, CSV, Arrow, and JSON files without requiring external database services . **Best for**: fast local analytical transformations, embedded pipelines, and DuckLake architectures .
 
+- **Polars** [![Stars](https://img.shields.io/github/stars/pola-rs/polars?style=social&color=white)](https://github.com/pola-rs/polars/stargazers)  
+  **Blazingly fast multi-threaded DataFrame transformation engine written in Rust** (MIT) . Employs Apache Arrow memory structures, lazy query optimization, and streaming execution for larger-than-RAM dataset transformations . **Best for**: modern high-throughput data engineering pipelines looking for an ultrafast Python/Rust alternative to pandas .
 
+- **dbt (data build tool)** [![Stars](https://img.shields.io/github/stars/dbt-labs/dbt-core?style=social&color=white)](https://github.com/dbt-labs/dbt-core/stargazers)  
+  **The de-facto standard for in-warehouse SQL transformation and analytics engineering** (Apache-2.0 for Core) . Enables analysts to write modular `.sql` SELECT statements enriched with Jinja templating, comprehensive schema testing, and auto-generated data documentation . Compiles to warehouse-native SQL (Snowflake, BigQuery, Redshift, Databricks) . **Best for**: analytics engineering teams seeking modular software engineering best practices inside their warehouse .
 
-- **SQLMesh**  
+- **SQLFluff** [![Stars](https://img.shields.io/github/stars/sqlfluff/sqlfluff?style=social&color=white)](https://github.com/sqlfluff/sqlfluff/stargazers)  
+  **The dialect-flexible, extensible SQL linter and auto-formatter** (MIT) . Supports dbt templating, Jinja logic, and dozens of warehouse SQL dialects (Snowflake, BigQuery, DuckDB, Postgres, T-SQL) . Enforces standardized SQL styling and detects syntax errors during CI/CD before models reach production . **Best for**: enforcing governance, readability, and consistency across team-maintained SQL models .
 
-  **The strongest technical alternative to dbt** (Apache-2.0) — **virtual data environments** for isolated development without separate schemas . **Native column-level lineage** built in . **SQL-first with templating**—similar coding level to dbt, making it **the easiest "next step" for dbt-trained teams** . **Best for**: teams wanting **dbt-like workflow with better environment isolation and native lineage** .
+- **SQLGlot** [![Stars](https://img.shields.io/github/stars/tobymao/sqlglot?style=social&color=white)](https://github.com/tobymao/sqlglot/stargazers)  
+  **Comprehensive, pure-Python SQL parser, transpiler, optimizer, and lineage engine** (MIT) . Transpiles queries seamlessly across 20+ SQL dialects, constructs abstract syntax trees (ASTs), and traces end-to-end column lineage . Powers leading query optimization and semantic modeling frameworks . **Best for**: cross-warehouse query translation, semantic layer development, and automated schema migrations .
 
+- **Apache DataFusion** [![Stars](https://img.shields.io/github/stars/apache/datafusion?style=social&color=white)](https://github.com/apache/datafusion/stargazers)  
+  **Extensible, high-performance vectorized SQL query engine written in Rust** (Apache-2.0) . Uses Apache Arrow as its in-memory format to provide composable building blocks for developing custom query engines, transformations, and modern distributed data platforms . **Best for**: developers crafting bespoke transformation tools and memory-efficient data compute frameworks .
 
+- **Ibis** [![Stars](https://img.shields.io/github/stars/ibis-project/ibis?style=social&color=white)](https://github.com/ibis-project/ibis/stargazers)  
+  **The portable Python DataFrame API for 20+ data analytical backends** (Apache-2.0) . Write idiomatic Python code once and execute it directly across DuckDB, Snowflake, BigQuery, ClickHouse, Postgres, or Polars without writing engine-specific SQL dialects . **Best for**: Python developers wanting high-level DataFrame syntax while leveraging warehouse push-down compute .
 
-- **Dataform**  
+- **SQLMesh** [![Stars](https://img.shields.io/github/stars/TobikoData/sqlmesh?style=social&color=white)](https://github.com/TobikoData/sqlmesh/stargazers)  
+  **Next-generation data transformation platform with virtual data environments** (Apache-2.0) . Provides compile-time SQL validation, automatic column-level lineage, and virtual data isolation (instant environment promotion without copying or recreating physical schemas) . Fully backwards compatible with dbt projects . **Best for**: teams seeking an efficient, safe alternative to dbt with native column lineage and instant dev/prod environments .
 
-  **SQL transformation tool for BigQuery** (Apache-2.0) — **the BigQuery-native choice** . **SQL-first with assertions and dependency management** . **Best for**: teams committed to **BigQuery** who want a **Google-native transformation layer** .
+- **Dataform** [![Stars](https://img.shields.io/github/stars/dataform-co/dataform?style=social&color=white)](https://github.com/dataform-co/dataform/stargazers)  
+  **SQL transformation and dependency orchestration framework for cloud data warehouses** (Apache-2.0) . Developed with a SQLX syntax combining SQL and JavaScript for dynamic table assertions and lineage graphs; now maintained as Google Cloud's native BigQuery transformation layer . **Best for**: BigQuery-focused engineering teams requiring built-in orchestration and native assertions .
 
+- **fal** [![Stars](https://img.shields.io/github/stars/fal-ai/fal?style=social&color=white)](https://github.com/fal-ai/fal/stargazers)  
+  **Python environment extension for dbt workflows and AI transformation pipelines** (MIT) . Run Python scripts, machine learning models, and predictive analytics directly after dbt model runs with native cloud execution and scheduling . **Best for**: augmenting dbt pipelines with Python algorithms, feature engineering, and inference tasks .
 
+- **Rocky** [![Stars](https://img.shields.io/github/stars/rocky-data/rocky?style=social&color=white)](https://github.com/rocky-data/rocky/stargazers)  
+  **Type-safe SQL compiler with compile-time type inference and diagnostic validation** (Apache-2.0) . Validates data contracts and schema compatibility before queries run against the warehouse . Features partition-level time interval materialization (`--lookback`, `--missing`) and static column-level lineage exported to JSON/Graphviz . **Best for**: teams wanting compile-time validation, partition concurrency, and CI/CD schema regression checks .
 
-- **interlace**  
+- **interlace** [![Stars](https://img.shields.io/github/stars/interlace-sh/interlace?style=social&color=white)](https://github.com/interlace-sh/interlace/stargazers)  
+  **All-in-one data engine unifying transformation, orchestration, and durable streaming in a single daemon** (MIT) . Replaces complex multi-tool stacks (dbt + Airflow + ingestion agents) with a declarative plan/apply workflow, column-pruned table reuse, and native DuckDB/DuckLake execution . **Best for**: lean engineering teams seeking a single, zero-dependency process for data transformation and orchestration .
 
-  **Python/SQL-first data platform combining transformation, orchestration, and durable streaming in one process** (MIT) — **the all-in-one open-source alternative** . **Replaces dbt/SQLMesh for transformation, the orchestrator (no Airflow), and the ingestion layer** . **Models are `.sql` files or Python functions** . **Terraform-style plan/apply** with **breaking/non-breaking change classification** and **column-pruned impact analysis** (downstream models with provably identical output reuse tables) . **Checks gate promotion** (10 built-in types plus custom Python functions) . **Runs on DuckDB + DuckLake by default** . **Requires Python 3.12+** . **Best for**: teams wanting a **single daemon for transformation, orchestration, and streaming** without stitching together dbt + Airflow + ingestion tools .
+- **unwind-sql** [![Stars](https://img.shields.io/github/stars/unwind-sql/unwind-sql?style=social&color=white)](https://github.com/unwind-sql/unwind-sql/stargazers)  
+  **SQL orchestration engine with AST-backed deterministic value-level lineage** (Apache-2.0) . Traces individual values and math transformations through Jinja SQL models down to the exact computed result . Features an interactive DAG visualizer and optional LLM root-cause investigator . **Best for**: financial, medical, and auditing workloads requiring explainable, deterministic value-level provenance .
 
-
-
-- **unwind-sql**  
-
-  **SQL orchestration with Jinja templating, semantic layer, and lineage at table, column, and value level** (open-source, alpha) — **the deterministic value-lineage choice** . **SQLGlot AST-backed lineage**—traces `raw_orders.gross_sales = 500.0` and `ref_local_taxes.tax_pct = 0.20` through to the final computed value . **Python models participate in the DAG** like any other node (opaque to lineage, but composable) . **Web UI** for DAG exploration . **Optional LLM investigator** explains traces in plain language . **Runs on DuckDB** . **Best for**: teams needing **deterministic value-level lineage** for debugging and compliance .
-
-
-
-- **Reble**  
-
-  **Branch-first SQL transformation with environment isolation** (open-source) — **the "git-style branches for data" choice** . **`reble branch create`** freezes every table as of that moment—**twenty runs over three days compute against the same inputs** so changes are attributable to SQL, not data drift . **`reble diff`** shows row-level changes between branches (`+0 added, -36,121 removed, ~214 changed`) before promoting . **`reble promote`** atomic view swaps . **Parallel engineer workflows** with scope overlap detection—**promote refuses with instructions** if a model reads tables changed by another branch . **Best for**: teams wanting **safe, isolated development with row-level diffs before production** .
-
-
-
-### Additional Strong Open-Source Options
-
-
-
-- **Dataform** — See above. **The BigQuery-native SQL transformation layer** .
-
-- **Rocky** — SQL transformation with **compile-time type inference, column-level lineage, and 35+ diagnostic codes** (open-source) . **Rocky-unique**: **Time Interval materialization** with per-partition execution, `--lookback` for late-arriving data, `--missing` for gap detection, and `--parallel N` for concurrent partition processing . **Compile-time lineage** accessible via CLI with JSON or Graphviz dot output—no warehouse query needed . **Best for**: teams wanting **compile-time validation and partition-level control** .
-
-- Community **n8n** workflows for transformation pipeline scheduling and data quality alerting.
-
-
-
-**Frameworks for building custom systems**: Combine **dbt** for SQL-first modeling with **SQLMesh** for virtual environments and native lineage, **interlace** for all-in-one transformation and orchestration, **Reble** for branch-based isolation with row-level diffs, and **unwind-sql** for deterministic value-level lineage—creating a comprehensive open-source data transformation stack.
-
-
-
-## How to Contribute
-
-
-
-1. Fork the repo.
-
-2. Add/edit entries in `README.md` (follow existing format).
-
-3. Include: name, link, 1–2 sentence description, and whether it's SaaS or open-source.
-
-4. Submit PR with a short explanation.
-
-
-
-Star the repo if you find it useful!
-
-
-
-## Disclaimer
-
-
-
-- This is a **community-curated** list — not exhaustive and not an endorsement.
-
-- Data transformation platforms handling enterprise data must comply with data protection regulations (GDPR, CCPA, etc.) and implement appropriate access controls.
-
-- **The "code-first vs. visual" distinction drives adoption.** **dbt** expects **SQL + Jinja + YAML + Git** fluency—**the largest ecosystem and talent pool**, but **steepest learning curve** . **Coalesce** blends **SQL knowledge with a visual graph**—**faster onboarding for SQL-capable but less engineering-oriented teams** . **Matillion** is **mostly visual with occasional SQL**—**highest user-friendliness, but version control and code review are less natural** . **Replacing a canvas with a repo is a staffing change dressed as a tooling change**—choose based on **who will build pipelines from now on** .
-
-- **Pricing models vary and can surprise.** **dbt Core is free** (open source); **dbt Cloud** is commercial . **Coalesce** has a **free development tier** but **Starter is $500/month** for production . **Matillion** uses **credits** (3/hour for transformation) with **no published dollar-per-credit rate** . **Prophecy** has a **generous free Starter** (20 credits) and **$150/user/month Professional** . **Keboola** charges **compute minutes** with a **free tier** (60 minutes/month after the first). **Model expected transformation volume before committing** .
-
-- **The Matillion ETL sunset is a migration deadline.** **Legacy Matillion ETL 1.78 LTS is supported until November 2026** . **Migration is unavoidable**—the only question is **where you land** . **If your bill is dominated by long-running transformations**, moving to dbt or Coalesce **drops the per-task-hour meter** . **If your analysts build the pipelines**, staying on a canvas or moving to Coalesce **preserves the staffing model** . **Decide deliberately before October** .
-
-- **dbt's Python limitation is real.** **Python support exists but runs through the warehouse's own Python runtime**—your available libraries and execution model depend on Snowflake or Databricks, not on you . **Column-level lineage is not native to dbt Core**—it requires a catalog or paid tier . **SQLMesh and Coalesce provide native column-level lineage** . **interlace and unwind-sql provide value-level lineage** . **Know what you're trading** .
-
-- **Branch-based development is an emerging differentiator.** **Reble's branch-first model** freezes input tables so **every run during development computes against the same state**—you can prove your SQL changed the output, not the data . **`reble diff`** shows **row-level changes before promoting** . **Scope overlap detection** prevents silent data merges . **This is a fundamentally safer development workflow than shared dev schemas** .
-
-- Self-hosted open-source solutions require proper infrastructure management, package maintenance, and ongoing tuning. **Transformation logic trapped in visual canvases has no export path**—migration requires rewriting intent . **Code-first tools avoid this lock-in** .
-
-
+- **Reble** [![Stars](https://img.shields.io/github/stars/satya1395/reble?style=social&color=white)](https://github.com/satya1395/reble/stargazers)  
+  **Branch-first SQL transformation with git-like environment isolation** (Apache-2.0) . Freezes table snapshots upon branch creation (`reble branch create`), computes model changes against identical input snapshots, and generates row-level diffs (`reble diff`) before promoting with zero downtime . **Best for**: safe team collaboration preventing dev-schema collision and untracked input data drift .
 
 ---
 
+### 🧩 Architectural Patterns & Stack Synthesis
 
+Modern data transformation architectures typically blend multiple layers of the ecosystem:
+1. **The In-Warehouse Standard**: Pair **dbt Core** or **SQLMesh** with **SQLFluff** for linting, and run models inside Snowflake, BigQuery, or Databricks.
+2. **The High-Speed Local Stack**: Combine **DuckDB** or **Polars** with **Ibis** or **SQLGlot** to process multi-gigabyte datasets directly in Python on a laptop with zero warehouse fees.
+3. **The Governed Enterprise Stack**: Deploy **Coalesce** or **Prophecy** atop cloud warehouses for visual and AI-assisted modeling while maintaining underlying Git repository sync.
 
-**Made for analytics engineers, data teams, and organizations building transparent data transformation solutions.**  
+---
 
-Let's make Data Transformation & Modeling more open, data-driven, and governed.
+## 🤝 How to Contribute
+
+We welcome contributions from the data engineering community! To add or update an entry:
+
+1. **Fork** this repository.
+2. **Create a branch** for your updates (`git checkout -b add-transformation-tool`).
+3. Add or update entries following the established markdown schema:
+   - For SaaS products: include scale/valuation, starting pricing, and specific free tier limits.
+   - For Open-Source projects: include the GitHub social star badge (`style=social&color=white`) linking to its stargazers page, license, and primary architectural strengths.
+4. Keep descriptions factual, unbiased, and focused on analytics engineering merit.
+5. **Submit a Pull Request** with a brief summary of the added project.
+
+---
+
+## 💖 Support & Community
+
+If you find this curated resource helpful for navigating data modeling and transformation architectures, please consider supporting the project:
+
+- ⭐ **Star this repository** to help others discover it across GitHub.
+- 🍴 **Fork and contribute** new tools, benchmarks, and ecosystem updates.
+- 📢 **Share with fellow analytics engineers** on Discord, LinkedIn, and tech communities.
+- ☕ **Sponsor the Maintainer**: Support ongoing curation and open-source research by visiting the [Sponsor Dashboard](https://github.com/sponsors/ishandutta2007).
+
+---
+
+## 📈 Star History
+
+[![Star History Chart](https://star-history.dera.page/svg?repos=ishandutta2007/Awesome-Data-Transformation-Modeling&type=date&legend=top-left)](https://star-history.dera.page/#ishandutta2007/Awesome-Data-Transformation-Modeling&type=date&legend=top-left)
+
+---
+
+## ⚖️ Disclaimer & Engineering Trade-offs
+
+- **Community Curation**: This is an independent, community-driven guide — not an endorsement of any commercial platform or vendor.
+- **Code-First vs. Visual Canvas**: Code-first frameworks (dbt, SQLMesh) favor developer ergonomics, Git versioning, pull requests, and automated CI tests, but demand SQL/Jinja proficiency. Visual canvases (Coalesce, Matillion, Prophecy) accelerate analyst onboarding and non-technical workflow authoring, but require strict governance to avoid pipeline sprawl.
+- **Cost Transparency**: Cloud warehouse compute costs are incurred in addition to software platform fees for ELT tools that push compute down into Snowflake, BigQuery, Redshift, or Databricks. Always estimate monthly query volumes and test execution plans prior to enterprise commitment.
+- **Compliance & Security**: Organizations processing regulated workloads (HIPAA, GDPR, SOC 2, CCPA) must ensure that any self-hosted or SaaS transformation layer upholds tenant isolation, metadata encryption, and access controls.
+
+---
+
+<div align="center">
+
+**Crafted with care for analytics engineers, data teams, and modern data stack builders.**  
+*Accelerating open, version-controlled, and governed data transformation.*
+
+</div>
