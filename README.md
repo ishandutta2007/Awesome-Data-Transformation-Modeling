@@ -28,7 +28,7 @@ Whether you are seeking:
 - **Visual Canvas & AI-Assisted ELT** (empowering analysts to design governed pipelines with column-level lineage)
 - **Data Quality, Formatting & Static Type-Checking** (catching schema drift, formatting SQL, and ensuring runtime guarantees)
 
-You will find vetted tools, starting pricing, free tier limits, star badges, and architectural trade-offs below.
+You will find vetted tools, starting pricing, free tier limits, Stars_Badges, and architectural trade-offs below.
 
 ---
 
@@ -37,7 +37,7 @@ You will find vetted tools, starting pricing, free tier limits, star badges, and
 - [📊 Sector Overview & Market Dynamics](#-sector-overview--market-dynamics)
 - [🏢 SaaS / Hosted Platforms](#-saas--hosted-platforms)
 - [⭐ Open-Source GitHub Projects](#-open-source-github-projects)
-  - [Top Projects (Ranked by Star Count)](#top-projects-ranked-by-star-count)
+  - [Top Projects (Ranked by Stars_Count)](#top-projects-ranked-by-star-count)
   - [Architectural Patterns & Stack Synthesis](#architectural-patterns--stack-synthesis)
 - [🤝 How to Contribute](#-how-to-contribute)
 - [💖 Support & Community](#-support--community)
@@ -74,9 +74,9 @@ Below is the comparative breakdown of leading enterprise SaaS and hosted transfo
 
 Open-source technologies form the bedrock of the modern data stack. These tools empower teams to maintain complete control over compute costs, avoid vendor lock-in, and deploy automated data pipelines on local development workstations, on-premises clusters, or any cloud environment.
 
-### Top Projects (Ranked by Star Count)
+### Top Projects (Ranked by Stars_Count)
 
-Repos below are sorted in **descending order by GitHub star count**. Each project includes a social star badge linking directly to its stargazer community:
+Repos below are sorted in **descending order by GitHub Stars_Count**. Each project includes a social Stars_Badge linking directly to its stargazer community:
 
 - **Apache Spark** [![Stars](https://img.shields.io/github/stars/apache/spark?style=social&color=white)](https://github.com/apache/spark/stargazers)  
   **Unified engine for large-scale distributed data transformation and processing** (Apache-2.0) . Supports DataFrame APIs and Spark SQL across Python, Scala, Java, and R . Provides execution engines for batch processing, streaming, machine learning, and petabyte-scale ETL pipelines . **Best for**: massive distributed data processing and hybrid big-data architectures .
@@ -142,7 +142,7 @@ We welcome contributions from the data engineering community! To add or update a
 2. **Create a branch** for your updates (`git checkout -b add-transformation-tool`).
 3. Add or update entries following the established markdown schema:
    - For SaaS products: include scale/valuation, starting pricing, and specific free tier limits.
-   - For Open-Source projects: include the GitHub social star badge (`style=social&color=white`) linking to its stargazers page, license, and primary architectural strengths.
+   - For Open-Source projects: include the GitHub social Stars_Badge (`style=social&color=white`) linking to its stargazers page, license, and primary architectural strengths.
 4. Keep descriptions factual, unbiased, and focused on analytics engineering merit.
 5. **Submit a Pull Request** with a brief summary of the added project.
 
